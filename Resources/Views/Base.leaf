@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>#import("title")</title>
+    <link rel="stylesheet" type="text/css" href="/styles/app.css">
+    #import("CSSStyle")
+</head>
+<body>
+    <div class = "background">
+        <div class = "nav">
+            <img src = "/images/logo.png"></img>
+            <text class = "logoTitle"> Vapor </text>
+            <div class = "menu">
+                <ul>
+                  <li><a class = "menu_a" href = "/hello", title = "game" > Game </a> </li>
+                  <li><a class = "menu_a" href = "/plaintext", title = "store">Store</a></li>
+                  <li><a class = "menu_a #import("isActive_userList")" href = "/usersList", title = "Users" > Users </a> </li>
+                  <li><a class = "menu_a #import("isActive_home")" href = "", title = "home" > Home </a> </li>
+                </ul>
+            </div>
+        </div>
+        #import("body")
+    </div>
+    <footer>
+        <div class= "footer_feature">
+            <span> Vapor</span>
+            <span> @saltpaper</span>
+        </div>
+
+    </footer>
+</body>
+
+</html>

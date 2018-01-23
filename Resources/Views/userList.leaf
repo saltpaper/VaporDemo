@@ -1,0 +1,16 @@
+#extend("Base")
+
+#export("title") { User List}
+#export("isActive_home") {isactive}
+#export("isActive_userList") {active}
+#export("CSSStyle"){<link rel="stylesheet" type="text/css" href="/styles/userList.css">}
+
+#export("body") {
+    <div class = "tableBody">
+        <table>
+            <caption>User Table</caption>
+            <tr class = "title_row"><td>Name</td><td>Email</td><td>Languages</td></tr>
+            <tr class = "value_row"><td>Tom</td><td>tom@gmail.com</td><td>English,Japanese</td></tr>
+        </table>
+    </div>
+}

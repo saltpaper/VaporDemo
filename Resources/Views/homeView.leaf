@@ -1,0 +1,52 @@
+#extend("Base")
+
+#export("title") { Home Page}
+#export("isActive_home") {active}
+#export("isActive_userList") {isactive}
+
+#export("body") {
+    <div class = "content">
+        <div class = "banner">
+            <img src = "/images/vapor_banner.jpg" alt = "a Web Framework for Swift"></img>
+        </div>
+        <h2>/ Grid Item /</h2>
+        <div class = "content_grid">
+            <div class = "content_grid_item">
+                <a href ="https://www.apple.com/cn/swift/" >
+                    <img src = "/images/swift.png" alt = "Swift"></img>
+                    <h3>Swift</h3>
+                    <p>a Web Framework for Swift</p>
+                </a>
+            </div>
+            <div class = "content_grid_item">
+                <a href ="https://developer.apple.com/cn/" >
+                    <img src = "/images/apple.png" alt = "Apple"></img>
+                    <h3>Apple</h3>
+                    <p>a Web Framework for Swift</p>
+                </a>
+            </div>
+            <div class = "content_grid_item">
+                <img src = "/images/twitter.png" alt = "Twitter"></img>
+                <h3>Twitter</h3>
+                <p>a Web Framework for Swift</p>
+            </div>
+            <div class = "content_grid_item">
+                <img src = "/images/airbnb.png" alt = "Airbnb"></img>
+                <h3>Airbnb</h3>
+                <p>a Web Framework for Swift</p>
+            </div>
+            <div class = "content_grid_item">
+                <a href ="https://github.com/github" >
+                    <img src = "/images/github.png" alt = "Github"></img>
+                    <h3>Github</h3>
+                    <p>a Web Framework for Swift</p>
+                </a>
+            </div>
+            <div class = "content_grid_item">
+                <img src = "/images/youtube.png" alt = "Youtube"></img>
+                <h3>Youtube</h3>
+                <p>a Web Framework for Swift</p>
+            </div>
+        </div>
+    </div>
+}

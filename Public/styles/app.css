@@ -1,0 +1,132 @@
+body {
+     text-align: center;
+     font-family : Helvetica;
+     padding: 0px; /**/
+     margin: 0px;
+}
+
+footer {
+    display:block;
+    box-sizing: border-box;
+    background:#69b0ac;
+   
+    width: 100%;
+    padding-bottom:0 px;
+    margin-bottom:0px;
+}
+
+div.background {
+    width : 60%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+div.nav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: white;
+}
+
+div.nav img {
+    display: block;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.logoTitle {
+    display: block;
+    font-size:20px;
+    color: #666;
+    padding:auto;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    margin-top:auto;
+}
+
+div.menu {
+    display: block;
+    padding:auto;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    margin-top:auto;
+    margin-left: auto;
+    
+}
+
+div.menu ul {
+    list-style: none; /* 去掉 黑点 */
+}
+
+div.menu li {
+    width: 80px;
+    float:right;
+    
+}
+
+div.menu li a {
+    text-decoration: none;   /*去掉 下划线*/
+    color: #69b0ac;
+    font-family: "Helvetica",Sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+
+div.menu li a.active {
+    background-color: #69b0ac;
+    color: white;
+}
+
+div.banner {
+    background-color: white;
+    display:block;
+    padding:auto;
+    margin-left: 0px;
+    margin-right:0px;
+    margin-top: 0px;
+    margin-bottom:auto;
+}
+
+div.content h2 {
+    padding: 5px;
+    color: #666;
+}
+
+div.content_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10 px 10px 50px 10px;
+    text-align: center;
+}
+
+div.content_grid_item  {
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+div.content_grid_item p {
+    text-align: center;
+    color: #666;
+}
+
+div.content_grid_item a {
+     text-decoration: none;
+}
+
+div.footer_feature {
+    width: 100%;
+    height:100%;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+}
+
+div.footer_feature span {
+    display: block;
+    font-family: "Quicksand", sans-serif;
+    color: #666;
+    margin: 10px;
+    font-size: 12px;    
+}

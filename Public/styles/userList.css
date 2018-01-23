@@ -1,0 +1,47 @@
+div.tableBody {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    text-align: center;
+    width:100%;
+   
+}
+
+div.tableBody table {
+    text-align: center;
+    border : 1px solid #ccc; /*若不设置solid，显示不出来的边框*/
+    width:50%;
+    padding:auto;
+    margin:auto;
+    border-collapse: collapse;
+    color: #666;
+}
+
+div.tableBody caption {
+    padding-bottom: 20px;
+}
+
+tr.title_row {
+    background-color:#69b0ac;
+    height: 44px;
+}
+
+tr.value_row {
+    height: 30px;
+}
+
+div.tableBody table td {
+    /*border:1px solid #ccc; */
+    
+    /*设置列与列之间的直线，参考: https://stackoverflow.com/questions/3313456/css-borders-between-table-columns-only */
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+div.tableBody table td:first-child {
+    border-left: none;
+}
+
+div.tableBody table td:last-child {
+    border-right: none;
+}
