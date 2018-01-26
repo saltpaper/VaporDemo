@@ -6,11 +6,26 @@
 #export("CSSStyle"){<link rel="stylesheet" type="text/css" href="/styles/userList.css">}
 
 #export("body") {
+    <br>
+    <div class = "fromBody">
+        <form action="/usersList" method="POST">
+            Name:<input type="text" name="userName"><br>
+            Email: <input type="text" name="email"><br>
+            Age:  <input type="text" name="age"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <div class = "tableBody">
         <table>
             <caption>User Table</caption>
-            <tr class = "title_row"><td>Name</td><td>Email</td><td>Languages</td></tr>
-            <tr class = "value_row"><td>Tom</td><td>tom@gmail.com</td><td>English,Japanese</td></tr>
+            <tr class = "title_row"><td>Name</td><td>Email</td><td>Age</td></tr>
+            #loop(users,"user") {
+                <tr class = "value_row">
+                    <td>#(user.userName)</td>
+                    <td>#(user.email)</td>
+                    <td>#(user.age)</td>
+                </tr>
+            }
         </table>
     </div>
 }

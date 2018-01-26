@@ -1,8 +1,7 @@
 body {
      text-align: center;
      font-family : Helvetica;
-     padding: 0px; /**/
-     margin: 0px;
+     margin: auto ; /*不加的话，footer可以看到左边有条白色的空隙*/
 }
 
 footer {
@@ -13,12 +12,16 @@ footer {
     width: 100%;
     padding-bottom:0 px;
     margin-bottom:0px;
+    /*下面的两句： 让footer保持在底部*/
+    position:absolute;
+    bottom: 0%;
+    
 }
 
 div.background {
     width : 60%;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;  /*上下间隔为0，左右间隔自动*/
     padding: auto;
 }
 
@@ -53,7 +56,6 @@ div.menu {
     margin-bottom: 8px;
     margin-top:auto;
     margin-left: auto;
-    
 }
 
 div.menu ul {

@@ -1,7 +1,6 @@
 div.tableBody {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 30px;
-
     text-align: center;
     width:100%;
    
@@ -19,6 +18,8 @@ div.tableBody table {
 
 div.tableBody caption {
     padding-bottom: 20px;
+    font-size: 25px;
+    color: black;
 }
 
 tr.title_row {
@@ -28,6 +29,7 @@ tr.title_row {
 
 tr.value_row {
     height: 30px;
+    color: #666;
 }
 
 div.tableBody table td {
@@ -44,4 +46,17 @@ div.tableBody table td:first-child {
 
 div.tableBody table td:last-child {
     border-right: none;
+}
+
+div.fromBody form input {
+    width: 30%;
+    height: 25px;
+}
+
+div.fromBody form input:last-child {
+    height: 35px;
+    width: 80px;
+    font-size: 20px;
+    background-color:#69b0ac;
+    
 }

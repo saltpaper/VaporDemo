@@ -32,8 +32,27 @@ extension Droplet {
         get("description") { req in return req.description }
         
         get("usersList") {req in
-            return try self.view.make("userList.leaf")
+            let list = try User.all()
+            return try self.view.make("userList",["users": list.makeNode(in: nil)])
         }
+        
+        post("usersList") { req in
+            guard let userName = req.data["userName"]?.string else {
+                return Response(status: .badRequest)
+            }
+            guard let email = req.data["email"]?.string else {
+                return Response(status: .badRequest)
+            }
+            
+            guard let age = req.data["age"]?.int else {
+                return Response(status: .badRequest)
+            }
+            
+            let user = User.init(userName: userName, email: email, age: age)
+            try user.save()
+            return Response(redirect: "usersList")
+        }
+        
         
         try resource("posts", PostController.self)
     }

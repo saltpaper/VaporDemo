@@ -15,7 +15,7 @@
                   <li><a class = "menu_a" href = "/hello", title = "game" > Game </a> </li>
                   <li><a class = "menu_a" href = "/plaintext", title = "store">Store</a></li>
                   <li><a class = "menu_a #import("isActive_userList")" href = "/usersList", title = "Users" > Users </a> </li>
-                  <li><a class = "menu_a #import("isActive_home")" href = "", title = "home" > Home </a> </li>
+                  <li><a class = "menu_a #import("isActive_home")" href = "/home", title = "home" > Home </a> </li>
                 </ul>
             </div>
         </div>
@@ -23,8 +23,8 @@
     </div>
     <footer>
         <div class= "footer_feature">
-            <span> Vapor</span>
-            <span> @saltpaper</span>
+            <text> Vapor</text>
+            <text> @saltpaper</text>
         </div>
 
     </footer>
